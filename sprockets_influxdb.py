@@ -659,7 +659,7 @@ def _write_measurements():
     """
     global _timeout, _writing
 
-    future = concurrent.TracebackFuture()
+    future = concurrent.Future()
 
     if _writing:
         LOGGER.warning('Currently writing measurements, skipping write')
