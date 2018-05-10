@@ -465,7 +465,7 @@ def _create_http_client():
         defaults['auth_password'] = auth_password
 
     _http_client = httpclient.AsyncHTTPClient(
-        force_instance=True, defaults=defaults, io_loop=_io_loop,
+        force_instance=True, defaults=defaults,
         max_clients=_max_clients)
 
 
